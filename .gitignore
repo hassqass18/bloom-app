@@ -22,3 +22,6 @@ Thumbs.db
 app/build/
 app/.dart_tool/
 **/*.iml
+
+# all gradle/flutter build output
+**/build/
