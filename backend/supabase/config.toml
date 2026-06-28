@@ -1,0 +1,37 @@
+# Bloom — Supabase local config (used by `supabase start` / CLI)
+project_id = "bloom"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["io.bloom.app://login-callback"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = false   # dev convenience; ON in prod
+
+# Google / Apple providers are configured in the hosted dashboard for staging/prod.
+
+[functions.ask]
+verify_jwt = true
+[functions.notice]
+verify_jwt = true
+[functions.mirror]
+verify_jwt = true

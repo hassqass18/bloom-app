@@ -1,0 +1,44 @@
+name: bloom
+description: "Bloom — your days, growing into something you can see."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Backend / auth
+  supabase_flutter: ^2.5.6
+  # State
+  flutter_riverpod: ^2.5.1
+  # Offline-first local store (no code-gen required)
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.3
+  # Connectivity for sync triggering
+  connectivity_plus: ^6.0.3
+  # Misc
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  # Voice-first capture + the Jarvis-like spoken companion
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.0.2
+  # Plays the ElevenLabs cloud-voice audio (falls back to on-device flutter_tts)
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Cinzel
+      fonts:
+        - asset: assets/fonts/Cinzel.ttf
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope.ttf

@@ -1,0 +1,7 @@
+{
+  "name": "bloom-voice",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bloom voice endpoint — ElevenLabs TTS proxy on Vercel (key server-side)."
+}

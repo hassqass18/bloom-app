@@ -1,0 +1,24 @@
+# Secrets — never commit
+**/.env
+**/.env.local
+**/.env.*.local
+keys.md
+
+# Backend (Supabase)
+backend/supabase/.branches/
+backend/supabase/.temp/
+
+# Node
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Flutter build artifacts live under app/ (app/.gitignore covers most);
+# belt-and-braces:
+app/build/
+app/.dart_tool/
+**/*.iml
